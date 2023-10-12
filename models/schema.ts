@@ -25,7 +25,7 @@ const increment = mongooseIncrement(mongoose)
     }
     , phoneValidator = async (phone: String) => {
         try {
-            let valid = phone.length == 10 && /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test(phone)
+            let valid = phone.length == 10
             return valid
         } catch (error) {
             console.log(error)

@@ -1,5 +1,6 @@
-import { mongoose, config } from '../deps.ts'
+import { mongoose } from '../deps.ts'
 import models from './schema.ts'
+
 const DBURL = Deno.env.get("DBURL")
 await mongoose.connect(DBURL)
 
