@@ -1,7 +1,6 @@
 import { mongoose, config } from '../deps.ts'
 import models from './schema.ts'
-const { DBURL } = config()
-
+const DBURL = Deno.env.get("DBURL")
 await mongoose.connect(DBURL)
 
 const login = async (collection, selectionCriteria) => models[collection].login(collection, selectionCriteria)

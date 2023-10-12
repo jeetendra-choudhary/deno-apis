@@ -50,7 +50,7 @@ const increment = mongooseIncrement(mongoose)
         }
         , email: {
             type: String,
-            required: true,
+            required: [true, 'Email is required'],
             unique: true
         }
     }, baseOption)
