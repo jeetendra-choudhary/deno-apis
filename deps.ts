@@ -5,4 +5,3 @@ import mongooseIncrement from 'npm:mongoose-increment@^2.0.0'
 export { mongooseIncrement }
 export * as bcrypt from "https://deno.land/x/bcrypt/mod.ts"
 export { create } from "https://deno.land/x/djwt@v2.9.1/mod.ts"
-export { config } from "https://deno.land/x/dotenv/mod.ts"
